@@ -1,34 +1,11 @@
 <!DOCTYPE html> 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"> 
-
-<head profile="http://gmpg.org/xfn/11">
+<html lang="en"> 
 
 	<title>Login Page</title>
-	
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
-	<meta name="description" content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis."  /> 
-	<meta name="keywords" content="meta, key, words"  /> 
-	
-	<meta property="og:title" content="Barrel Sanctuary"/> 
-	<meta property="og:image" content="http://demo5.launcheffectapp.com/wp-content/uploads/2011/09/Screen-shot-2011-09-15-at-4.26.51-PM.png"/>
-
-
-
-
-    <script type="text/javascript">
-		WebFontConfig = {
-			google: { families: [ 'Oswald' ] }			
-		};
-    </script>
-
-	
+	<meta name="description" content="Simple Login Form"  /> 
 	<link rel="stylesheet" type="text/css" href="http://demo5.launcheffectapp.com/wp-content/themes/launcheffect/reset.css" />
 	<link rel="stylesheet" type="text/css" href="http://demo5.launcheffectapp.com/wp-content/themes/launcheffect/style.css" />
-	
-	<script type="text/javascript" src="https://apis.google.com/js/plusone.js">
-	      {"parsetags": "explicit"}
-	</script>
-
 	<style type="text/css">
 	h3 {
 		font-family:Helvetica Neue, Arial, sans-serif;
@@ -147,25 +124,11 @@
 		<div id="container"> 
 	
 			<div id="inner-container"> 
-				
-				<!-- LOGO -->
-				
-								
-				
-				<!-- H1 TITLE -->
-				
+
 									<h3>Login Page</h3>
-								
-				
-				<!-- YOUTUBE / VIMEO EMBED -->
-				
-								
-				
-				<!-- H2 SUBHEADING / P DESCRIPTION (PRESIGNUP) -->
+
 				<div id="content-blocks-wrapper">
 
-					
-					<!-- FORM (PRE-SIGNUP) -->
             		<form action="index.php" method="POST" name="ticket">
 						<fieldset>
 							<input type="hidden" name="code" id="code" value="Sbtr8" />
@@ -223,22 +186,12 @@
 				</div><!-- end #content-blocks-wrapper -->
 			
 				<div class="clear"></div>
-				
 								
 			</div> 
 	
 		</div> 
 	
 	</div> 
-	
-	<ul id="footer" style="padding-bottom: 7px;">
-		<li>
-			Page design & development by <a href="http://mnmlly.com" style="text-decoration: none; color:#58d1ef;!important !important">mnmlly</a> design.
-		</li>
-			</ul>
-
-
-		
-					
+				
 </body>
 </html>
