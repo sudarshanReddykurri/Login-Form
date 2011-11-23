@@ -63,7 +63,7 @@
 	}
 	
 	#inner-container {
-		width:310px;
+		width:500px;
 		margin-top: -100px;		
 		margin: 0 auto;		
 		background-color: #e9e9e9;
@@ -126,65 +126,36 @@
 
 					
 
-            <form action="registration.php" method="GET" name="reg">
-<fieldset>
+<form action="registration.php" method="GET" name="reg">
+	<fieldset>
 	<label for="firstname">FIRSTNAME:</label>
-	<input name="firstname" type="text" />
-	<br />
-	<label for="lastname">LASTNAME:</label>
-	<input name="lastname" type="text" />
-	<br />
+	<input name="firstname" type="text" style="width:150px;"/>
+	<label for="lastname" style="margin-top: -26px; margin-left: 176px;">LASTNAME:</label>
+	<input name="lastname" type="text"/>
+	<div class="clear"></div>
+	<label for="dob" style=" ">DATE OF BIRTH:</label>
+	<input name="dob" type="text" value="dd/mm/yyyy" style="width: 85px;" />
+	<div class="clear"></div>
 	<label for="email">EMAIL:</label>
-	<input name="email" type="text" />
+	<input name="email" type="text"  style=""/>
 	<br />
 	<label for="password">PASSWORD:</label>
 	<input name="password" type="password" />
 	<br />
-								<?php
-								echo date_dropdown();
-								?>
-								</form>
-									<div class="clear"></div>
-									<span id="submit-button-border"><input type="submit" name="submit" value="Create" id="submit-button" /></span>
-</fieldset>
+	<div class="clear"></div>
+	<br />
+	<span id="submit-button-border"><input type="submit" name="submit" value="Create" id="submit-button" /></span>								
+	</fieldset>
+ </form>
 
             <?php
-            
-            function date_dropdown($year_limit = 0){
-                    $html_output = '    <div id="date_select" >'."\n";
-                    $html_output .= '        <label for="date_day">DATE OF BIRTH:</label>'."\n";
-            
-                    /*days*/
-                    $html_output .= '           <select name="date_day" id="day_select">'."\n";
-                        for ($day = 1; $day <= 31; $day++) {
-                            $html_output .= '               <option>' . $day . '</option>'."\n";
-                        }
-                    $html_output .= '           </select>'."\n";
-            
-                    /*months*/
-                    $html_output .= '           <select name="date_month" id="month_select" >'."\n";
-                    $months = array("", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
-                        for ($month = 1; $month <= 12; $month++) {
-                            $html_output .= '               <option value="' . $month . '">' . $months[$month] . '</option>'."\n";
-                        }
-                    $html_output .= '           </select>'."\n";
-            
-                    /*years*/
-                    $html_output .= '           <select name="date_year" id="year_select">'."\n";
-                        for ($year = 1900; $year <= (date("Y") - $year_limit); $year++) {
-                            $html_output .= '               <option>' . $year . '</option>'."\n";
-                        }
-                    $html_output .= '           </select>'."\n";
-            
-                    $html_output .= '   </div>'."\n";
-                return $html_output;
-            }
             
             $db = new mysqli("localhost", "root", "root", "security_ITAS218");
 
             $password = $_GET['password'];
             $firstname = $_GET['firstname'];
             $lastname = $_GET['lastname'];
+            $dob = $_GET['dob'];
             $accountname = strtolower($firstname . $lastname);
             $email = $_GET['email'];
 
