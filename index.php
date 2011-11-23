@@ -68,7 +68,7 @@
 		width:502px;
 		margin-top: -100px;		
 		margin: 0 auto;		
-		background-color: #f4f4f4;
+		background-color: #fff;
 		-webkit-border-radius: 5px; /* Saf3-4, iOS 1-3.2, Android <e;1.6 */
 		   -moz-border-radius: 5px; /* FF1-3.6 */
 		        border-radius: 5px; /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
@@ -114,9 +114,9 @@
 	<![endif]--> 
 </head>
 
-<body style="background: #EAE5E3 url('images/bg2.jpg') no-repeat left top;">
+<body style="background: url(images/bkg_body.gif)  repeat-x white;">
 
-	<div id="outer-container"> 
+	<div id="outer-container" style="background: url(images/bg1.gif) top center no-repeat;"> 
 	
 		<div id="container"> 
 	
