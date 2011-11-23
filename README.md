@@ -5,6 +5,7 @@ A simple login form with functional user registration. The login and registratio
 All passwords are __hashed__ & __salted__  before being stored in the table.
 
 ### Usage:
+Simply put the files in your *AMP/APACHE Directory and then navigate to that directory in your browser. To create the database, run the script provided in the __MySQL__ folder. If that doesn't work login to your MySQL via the Terminal/Command Prompt and copy and paste the script into there. To create accounts simply use the __Registration__ page, and fill in the appropriate data. 
 
 ### Licence:
 
