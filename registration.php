@@ -11,10 +11,8 @@
 		padding-bottom: 25px;
 		font-weight:normal;
 		font-style:normal;
-		color: #B5B5B5;
-text-shadow: 0px 1px 1px #fff;!important
-
-		text-shadow: none;
+		color: #333;
+		text-shadow: 0px 1px 1px #fff;!important
 	}
 	
 	h2 {
@@ -22,8 +20,8 @@ text-shadow: 0px 1px 1px #fff;!important
 		font-size:1em;
 		font-weight:normal;
 		font-style:normal;
-		color:#333;text-shadow: 0px 1px 1px white;
-		color: #B5B5B5;		text-shadow: none;
+		color:#333;
+		text-shadow: 0px 1px 1px white;
 	}
 	
 	
@@ -32,8 +30,7 @@ text-shadow: 0px 1px 1px #fff;!important
 		font-size:.7em;
 		font-weight:normal;
 		font-style:normal;
-text-shadow: 0px 1px 1px white;
-color: #B5B5B5;
+		color: #333;
 		text-shadow: none;
 	}
 	
@@ -99,6 +96,12 @@ color: #B5B5B5;
 	
 <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js?ver=3.2.1'></script>
 <script type='text/javascript' src='http://demo5.launcheffectapp.com/wp-content/themes/launcheffect/js/init.js?ver=1.0'></script>
+<script type="text/javascript">
+        function goBack()
+        {
+            window.location = "index.php";
+        }
+    </script>
 	<!--[if lt IE 8]>
 	<style type="text/css">
 		#outer-container{display:block}
@@ -116,7 +119,7 @@ color: #B5B5B5;
 	<![endif]--> 
 </head>
 
-<body style="background: #ff9c5e;">
+<body style="background: #EAE5E3 url('images/bg2.jpg') no-repeat left top;; ">
 
 	<div id="outer-container"> 
 	
@@ -124,7 +127,7 @@ color: #B5B5B5;
 	
 			<div id="inner-container"> 
 				
-									<h3>Registration</h3>							
+									<h3 style="margin-left: 8px;">Registration</h3>							
 				
 				<div id="content-blocks-wrapper">
 
@@ -132,24 +135,24 @@ color: #B5B5B5;
 
 <form action="registration.php" method="GET" name="reg">
 	<fieldset>
-	<label for="firstname">FIRSTNAME:</label>
+	<label for="firstname" style="margin-left: 10px;">FIRSTNAME:</label>
 	<input name="firstname" type="text"/>
-	<label for="lastname" style="margin-top: -26px; margin-left: 245px;">LASTNAME:</label>
+	<label for="lastname" style="margin-top: -26px; margin-left: 255px;">LASTNAME:</label>
 	<input name="lastname" type="text"/>
 	<div class="clear"></div>
-	<label for="username" style=" ">USERNAME:</label>
+	<label for="username" style="margin-left: 10px;">USERNAME:</label>
 	<input name="username" type="text" />
-	<label for="dob" style="margin-top: -26px; margin-left: 245px;">DATE OF BIRTH:</label>
+	<label for="dob" style="margin-top: -26px; margin-left: 255px;">DATE OF BIRTH:</label>
 	<input name="dob" type="text" value="dd/mm/yyyy" />
 	<div class="clear"></div>
-	<label for="email">EMAIL:</label>
-	<input name="email" type="text"  style=""/>
-	<label for="password" style="margin-top: -26px; margin-left: 245px;">PASSWORD:</label>
+	<label for="email" style="margin-left: 10px;">EMAIL:</label>
+	<input name="email" type="text" />
+	<label for="password" style="margin-top: -26px; margin-left: 255px;">PASSWORD:</label>
 	<input name="password" type="password" />
 	<br />
 	<div class="clear"></div>
 	<br />
-	<span id="submit-button-border"><input type="submit" name="submit" value="Create" id="submit-button" /></span><span id="submit-button-border"><input type="button" name="back" value="Cancel" id="submit-button" /></span>								
+	<span id="submit-button-border" style="margin-left: 10px;"><input type="submit" name="submit" value="Create" id="submit-button"  /></span><span id="submit-button-border"><input type="button" name="back" value="Cancel" id="submit-button" onclick="goBack()" /></span>							
 	</fieldset>
  </form>
  
@@ -178,8 +181,8 @@ color: #B5B5B5;
 
             $db->query("USE users;");
 
-            $query = "INSERT INTO `security_ITAS218`.`users` (`firstname`, `lastname`, `accountname`, `email`, `password`, `salt`) 
-            VALUES ('$firstname', '$lastname', '$accountname', '$email', '$final', '$salt')";
+            $query = "INSERT INTO `security_ITAS218`.`users` (`firstname`, `lastname`, `accountname`, `birthdate`, `email`, `password`, `salt`) 
+            VALUES ('$firstname', '$lastname', '$accountname', '$dob', '$email', '$final', '$salt')";
 
             if ($_GET['firstname'] && $_GET['lastname'] && $_GET['email'] && $_GET['password']) {
                 $db->query($query);
