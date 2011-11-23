@@ -218,7 +218,7 @@ ul#footer li a.logo {
 }
 
 	h3 {
-		font-family:Helvetica Neue, Arial, sans-serif;
+		font-family:'Helvetica Neue', Arial, sans-serif;
 		font-size:2em;
 		padding-bottom: 25px;
 		font-weight:normal;
@@ -228,7 +228,7 @@ ul#footer li a.logo {
 	}
 	
 	h2 {
-		font-family:Helvetica Neue, Arial, sans-serif;
+		font-family:'Helvetica Neue', Arial, sans-serif;
 		font-size:1em;
 		font-weight:normal;
 		font-style:normal;
@@ -238,7 +238,7 @@ ul#footer li a.logo {
 	
 	
 	h2.social-heading, label {
-		font-family:Helvetica Neue, Arial, sans-serif;
+		font-family:'Helvetica Neue', Arial, sans-serif;
 		font-size:.7em;
 		font-weight:normal;
 		font-style:normal;
@@ -248,7 +248,7 @@ ul#footer li a.logo {
 	
 	p, ul#inner-footer li a {
 		font-size:1.0em;
-				font-family:Helvetica Neue, Arial, sans-serif;
+				font-family:'Helvetica Neue', Arial, sans-serif;
 				
 	}
 
@@ -263,7 +263,7 @@ ul#footer li a.logo {
 	input#submit-button {
 		background-color:#fff;
 		color: #333;
-		font-family:Helvetica Neue, Arial, sans-serif;
+		font-family:'Helvetica Neue', Arial, sans-serif;
 	}
 	
 	span#submit-button-border {
