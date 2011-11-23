@@ -46,7 +46,7 @@
 	}
 	
 	p a, ul#inner-footer li a, span.register a {
-		color:#f60 !important;
+		color:#ff9c5e !important;
 	}
 	
 	input#submit-button {
@@ -156,8 +156,8 @@
 					            $db->query("USE users");
 					
 					            if (isset($_POST['accountname']) && isset($_POST['password'])) {
-					                $username = $_POST['accountname'];
-					                $pswd = $_POST['password'];
+					                $username = mysql_real_escape_string($_POST['accountname']);
+					                $pswd = mysql_real_escape_string($_POST['password']);
 					                $query = "select * FROM users WHERE accountname = '$username'";
 					                $result = $db->query($query);
 					                $row = $result->fetch_object();
@@ -169,7 +169,7 @@
 					                    echo "<script> window.location = \"http://google.ca\"; </script>";
 					                    exit;
 					                } else {
-					                    echo "<span style= \"color:#fe5d5f; margin-left:10px;\">Username or password is incorrect.</span><br /><br />";
+					                    echo "<span style= \"color:#ff5e60; margin-left:10px;\">Username or password is incorrect.</span><br /><br />";
 					                }
 					            }
 					            ?>
