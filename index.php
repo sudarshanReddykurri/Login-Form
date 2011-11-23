@@ -12,10 +12,8 @@
 		padding-bottom: 25px;
 		font-weight:normal;
 		font-style:normal;
-		color: #B5B5B5;
-text-shadow: 0px 1px 1px #fff;!important
-
-		text-shadow: none;
+		color: #333;
+		text-shadow: 0px 1px 1px #fff;!important
 	}
 	
 	h2 {
@@ -23,8 +21,8 @@ text-shadow: 0px 1px 1px #fff;!important
 		font-size:1em;
 		font-weight:normal;
 		font-style:normal;
-		color:#333;text-shadow: 0px 1px 1px white;
-		color: #B5B5B5;		text-shadow: none;
+		color:#333;
+		text-shadow: 0px 1px 1px white;
 	}
 	
 	
@@ -33,8 +31,7 @@ text-shadow: 0px 1px 1px #fff;!important
 		font-size:.7em;
 		font-weight:normal;
 		font-style:normal;
-text-shadow: 0px 1px 1px white;
-color: #B5B5B5;
+		color: #333;
 		text-shadow: none;
 	}
 	
@@ -63,12 +60,12 @@ color: #B5B5B5;
 	}
 	
 	input#submit-button:hover {
-		background-color:#c4c4c4;
+		background-color:#333;
 		color: #fff;
 	}
 	
 	#inner-container {
-		width:500px;
+		width:502px;
 		margin-top: -100px;		
 		margin: 0 auto;		
 		background-color: #f4f4f4;
@@ -97,10 +94,9 @@ color: #B5B5B5;
 	}
 
 </style>
-		
+	
 <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js?ver=3.2.1'></script>
 <script type='text/javascript' src='http://demo5.launcheffectapp.com/wp-content/themes/launcheffect/js/init.js?ver=1.0'></script>
-
 	<!--[if lt IE 8]>
 	<style type="text/css">
 		#outer-container{display:block}
@@ -108,7 +104,6 @@ color: #B5B5B5;
 		#inner-container{top:-50%;position:relative}
 	</style>
 	<![endif]--> 
-	
 	<!--[if IE 7]>
 	<style type="text/css">
 		#outer-container{
@@ -117,10 +112,9 @@ color: #B5B5B5;
 		}
 	</style>
 	<![endif]--> 
-
 </head>
 
-<body style="background: #58d1ef;">
+<body style="background: #EAE5E3 url('images/bg2.jpg') no-repeat left top;">
 
 	<div id="outer-container"> 
 	
@@ -134,19 +128,15 @@ color: #B5B5B5;
 
             		<form action="index.php" method="POST" name="ticket">
 						<fieldset>
-							<input type="hidden" name="code" id="code" value="Sbtr8" />
-							<label for="username">USERNAME :</label>
-							<input type="text" id="email" name="accountname" />
-							<br />
-							<br />
-							<br />
-							<br />
-							<label for="email">PASSWORD :</label>
-							<input type="password" id="email" name="password" />
-							<span id="submit-button-border"><input type="submit" name="submit" value="Go" id="submit-button" /></span>
+						<label for="accountname" style="margin-left: 10px;">USERNAME:</label>
+						<input name="accountname" type="text"/>
+						<label for="password" style="margin-top: -26px; margin-left: 255px;">PASSWORD:</label>
+						<input name="password" type="password"/>
+						<div class="clear"></div>
+							<span id="submit-button-border" style="margin-left: 10px;"><input type="submit" name="submit" value="Login" id="submit-button"  /></span>
 							<div class="clear"></div>
 							<br />
-													<span class="privacy-policy">For those without an account please register for one<a href="registration.php"> here</a>.</span>
+													<span class="privacy-policy" style="margin-left: 10px;">For those without an account please register for one<a href="registration.php"> here</a>.</span>
 						</fieldset>
 					</form>
 					
