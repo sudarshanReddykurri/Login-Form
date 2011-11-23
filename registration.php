@@ -129,17 +129,18 @@
 <form action="registration.php" method="GET" name="reg">
 	<fieldset>
 	<label for="firstname">FIRSTNAME:</label>
-	<input name="firstname" type="text" style="width:150px;"/>
-	<label for="lastname" style="margin-top: -26px; margin-left: 176px;">LASTNAME:</label>
+	<input name="firstname" type="text"/>
+	<label for="lastname" style="margin-top: -26px; margin-left: 245px;">LASTNAME:</label>
 	<input name="lastname" type="text"/>
 	<div class="clear"></div>
-	<label for="dob" style=" ">DATE OF BIRTH:</label>
-	<input name="dob" type="text" value="dd/mm/yyyy" style="width: 85px;" />
+	<label for="username" style=" ">USERNAME:</label>
+	<input name="username" type="text" />
+	<label for="dob" style="margin-top: -26px; margin-left: 245px;">DATE OF BIRTH:</label>
+	<input name="dob" type="text" value="dd/mm/yyyy" />
 	<div class="clear"></div>
 	<label for="email">EMAIL:</label>
 	<input name="email" type="text"  style=""/>
-	<br />
-	<label for="password">PASSWORD:</label>
+	<label for="password" style="margin-top: -26px; margin-left: 245px;">PASSWORD:</label>
 	<input name="password" type="password" />
 	<br />
 	<div class="clear"></div>
