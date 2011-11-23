@@ -128,33 +128,31 @@
 
             <form action="registration.php" method="GET" name="reg">
 <fieldset>
-	<label for="firstname">FIRSTNAME :</label>
-	<input name="firstname" type="text" id="email"/>
+	<label for="firstname">FIRSTNAME:</label>
+	<input name="firstname" type="text" />
 	<br />
-	<label for="lastname">LASTNAME :</label>
-	<input name="lastname" type="text" id="email" />
+	<label for="lastname">LASTNAME:</label>
+	<input name="lastname" type="text" />
 	<br />
-	<label for="email">EMAIL :</label>
-	<input name="email" type="text" id="email" />
+	<label for="email">EMAIL:</label>
+	<input name="email" type="text" />
 	<br />
-	<label for="password">PASSWORD :</label>
-	<input name="password" type="password" id="email" />
-	<span id="submit-button-border"><input type="submit" name="submit" value="Create" id="submit-button" /></span>
-	<div class="clear"></div>
+	<label for="password">PASSWORD:</label>
+	<input name="password" type="password" />
 	<br />
-								<span class="privacy-policy"></span>
 								<?php
 								echo date_dropdown();
 								?>
 								</form>
-								
+									<div class="clear"></div>
+									<span id="submit-button-border"><input type="submit" name="submit" value="Create" id="submit-button" /></span>
 </fieldset>
 
             <?php
             
             function date_dropdown($year_limit = 0){
                     $html_output = '    <div id="date_select" >'."\n";
-                    $html_output .= '        <label for="date_day">Date of birth:</label>'."\n";
+                    $html_output .= '        <label for="date_day">DATE OF BIRTH:</label>'."\n";
             
                     /*days*/
                     $html_output .= '           <select name="date_day" id="day_select">'."\n";
