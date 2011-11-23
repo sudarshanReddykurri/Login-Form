@@ -40,11 +40,11 @@
 				
 	}
 
-	p, span.privacy-policy {
+	p, span.register {
 		color:#333;
 	}
 	
-	p a, ul#inner-footer li a, span.privacy-policy a {
+	p a, ul#inner-footer li a, span.register a {
 		color:#f60 !important;
 	}
 	
