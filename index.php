@@ -1,5 +1,6 @@
 <!DOCTYPE html> 
 <html lang="en"> 
+<head>
 	<title>Login Page</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
 	<meta name="description" content="Simple Login Form"  /> 
