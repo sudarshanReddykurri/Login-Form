@@ -78,7 +78,7 @@
                             }
                         }
                         ?>
-                        <span class="register" style="margin-left: 10px;">For those without an account please register for one<a href="registration.php"> here</a>.</span>
+                        <span class="register" style="margin-left: 10px;">Register for an account <a href="registration.php">here</a>.</span>
                     </div><!-- end #content-blocks-wrapper -->
                     <div class="clear"></div>				
                 </div> 

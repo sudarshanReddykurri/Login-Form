@@ -254,10 +254,12 @@ ul#footer li a.logo {
 
 	p, span.register {
 		color:#333;
+		font-size: small;
 	}
 	
 	p a, ul#inner-footer li a, span.register a {
 		color:#ff9c5e !important;
+		font-size: small;
 	}
 	
 	input#submit-button {
