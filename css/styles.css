@@ -60,17 +60,6 @@ a:active, a:hover {
 	text-decoration:underline;
 }
 
-.feature {
-	width:320px;
-	margin:0 0 20px 0;
-	overflow:hidden;
-}
-
-.feature.video, iframe {
-	margin:0 0 40px 0;
-}
-
-
 /* CONTAINER */
 
 #outer-container {
@@ -136,7 +125,7 @@ ul#inner-footer li.inner-footer_icon a:hover {
 input {
 	background:white;
 	border:1px solid #aaa;
-	padding:12px 15px;
+	padding: 7px 7px;
 	width:220px;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
@@ -146,7 +135,7 @@ input {
 	font-size:0.8em;
 	line-height:0.9em;
 	float:left;
-	margin:0 10px 0 0;
+	margin: 0 50px 10px 0;
 }
 
 input:focus {
@@ -167,7 +156,7 @@ input#submit-button {
 
 	background:transparent;
 	border:none;
-	width:50px;
+	width:100px;
 	height:43px;
 	font-size:0.8em;
 	margin:0;
@@ -290,57 +279,4 @@ ul#footer li a.logo {
 	text-indent:-9999px;
 	position:relative;
 	top:-4px;
-}
-
-
-/* SUPERSIZED PLUGIN */
-		
-#supersized-loader { position:absolute; top:50%; left:50%; z-index:10; width:60px; height:60px; margin:-30px 0 0 -30px; text-indent:-999em; background-color:#111; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px;}
-
-#supersized { position:fixed; left:0; top:0; overflow:hidden; z-index:-999; height:100%; width:100%; }
-#supersized img{ height:auto; width:auto; position:relative; outline:none; border:none; -ms-interpolation-mode:bicubic; image-rendering: optimizeQuality; }
-
-
-/* jqModal base Styling courtesy of;
-	Brice Burgess <bhb@iceburg.net> */
-
-/* The Window's CSS z-index value is respected (takes priority). If none is supplied,
-	the Window's z-index value will be set to 3000 by default (via jqModal.js). */
-	
-.jqmWindow {
-    display: none;
-    
-    position: absolute;
-    top: 17%;
-    left: 50%;
-    
-    margin-left: -200px;
-    width: 400px;
-    
-    background-color: #EEE;
-    color: #333;
-    padding: 40px;
-    font-size:0.8em;
-    line-height:1.4em;
-}
-
-.jqmWindow h2 {
-	text-transform:capitalize;
-	color:#333 !important;
-}
-
-.jqmOverlay { background-color: #000; }
-
-/* Background iframe styling for IE6. Prevents ActiveX bleed-through (<select> form elements, etc.) */
-* iframe.jqm {position:absolute;top:0;left:0;z-index:-1;
-	width: expression(this.parentNode.offsetWidth+'px');
-	height: expression(this.parentNode.offsetHeight+'px');
-}
-
-/* Fixed posistioning emulation for IE6
-     Star selector used to hide definition from browsers other than IE6
-     For valid CSS, use a conditional include instead */
-* html .jqmWindow {
-     position: absolute;
-     top: expression((document.documentElement.scrollTop || document.body.scrollTop) + Math.round(17 * (document.documentElement.offsetHeight || document.body.clientHeight) / 100) + 'px');
 }

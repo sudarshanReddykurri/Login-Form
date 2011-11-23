@@ -27,7 +27,7 @@
 	
 	h2.social-heading, label {
 		font-family:Helvetica Neue, Arial, sans-serif;
-		font-size:1em;
+		font-size:.7em;
 		font-weight:normal;
 		font-style:normal;
 		color:#333;
@@ -120,7 +120,7 @@
 	
 			<div id="inner-container"> 
 				
-									<h3>Registration Page HELLO</h3>							
+									<h3>Registration</h3>							
 				
 				<div id="content-blocks-wrapper">
 
@@ -131,20 +131,11 @@
 	<label for="firstname">FIRSTNAME :</label>
 	<input name="firstname" type="text" id="email"/>
 	<br />
-	<br />
-	<br />
-	<br />
 	<label for="lastname">LASTNAME :</label>
 	<input name="lastname" type="text" id="email" />
 	<br />
-	<br />
-	<br />
-	<br />
 	<label for="email">EMAIL :</label>
 	<input name="email" type="text" id="email" />
-	<br />
-	<br />
-	<br />
 	<br />
 	<label for="password">PASSWORD :</label>
 	<input name="password" type="password" id="email" />
