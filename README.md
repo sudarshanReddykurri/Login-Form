@@ -1,9 +1,12 @@
 ## Simple PHP/MySQL Login Form
 
-Description: A simple login form with functional user registration. The login and registration pages pull data from a MySQL database which stores the information provided upon account creation.
+### Description:
+A simple login form with functional user registration. The login and registration pages pull data from a MySQL database which stores the information provided upon account creation.
 All passwords are __hashed__ & __salted__  before being stored in the table.
 
-Licence:
+### Usage:
+
+### Licence:
 
 Copyright (C) 2011 by Jason Lennstrom
 
