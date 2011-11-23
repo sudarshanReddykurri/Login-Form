@@ -35,7 +35,7 @@
                 <div id="inner-container"> 
                     <h3 style="margin-left: 8px;">Registration</h3>							
                     <div id="content-blocks-wrapper">
-                        <form action="registration.php" method="GET" name="reg">
+                        <form action="registration.php" method="POST" name="reg">
                             <fieldset>
                                 <label for="firstname" style="margin-left: 10px;">FIRSTNAME:</label>
                                 <input name="firstname" type="text"/>
@@ -54,18 +54,19 @@
                                 <br />
                                 <div class="clear"></div>
                                 <br />
-                                <span id="submit-button-border" style="margin-left: 10px;"><input type="submit" name="submit" value="Create" id="submit-button"  /></span><span id="submit-button-border"><input type="button" name="back" value="Cancel" id="submit-button" onclick="goBack()" /></span>							
+                                <span id="submit-button-border" style="margin-left: 10px;"><input type="submit" name="submit" value="Create" id="submit-button"  /></span><span id="submit-button-border"><input type="button" name="back" value="Cancel" id="submit-button" onclick="goBack()" /></span>
+                                <input type="hidden" name="submitted" value="1"/>							
                             </fieldset>
                         </form>
                         <?php
                         $db = new mysqli("localhost", "root", "root", "login");
 
-                        $password = $_GET['password'];
-                        $firstname = $_GET['firstname'];
-                        $lastname = $_GET['lastname'];
-                        $dob = $_GET['dob'];
-                        $accountname = strtolower($_GET['username']);
-                        $email = $_GET['email'];
+                        $password = $_POST['password'];
+                        $firstname = $_POST['firstname'];
+                        $lastname = $_POST['lastname'];
+                        $dob = $_POST['dob'];
+                        $accountname = strtolower($_POST['username']);
+                        $email = $_POST['email'];
 
                         $salt = bin2hex(mcrypt_create_iv(16, MCRYPT_DEV_URANDOM)); //get 256 random bits in hex
                         $hash = hash("sha256", $salt . $password); //prepend the salt, then hash
@@ -83,9 +84,13 @@
                         $query = "INSERT INTO `login`.`users` (`firstname`, `lastname`, `accountname`, `birthdate`, `email`, `password`, `salt`) 
             		VALUES ('$firstname', '$lastname', '$accountname', '$dob', '$email', '$final', '$salt')";
 
-                        if ($_GET['firstname'] && $_GET['lastname'] && $_GET['email'] && $_GET['password']) {
+                        if ($_POST['firstname'] && $_POST['lastname'] && $_POST['email'] && $_POST['password'] && $_POST['username'] && $_POST['dob']) {
                             $db->query($query);
                             echo "<script> window.location = \"index.php\"; </script>";
+                        } else if (isset($_POST['submitted'])) {
+                            if ($_POST['firstname'] == null || $_POST['lastname'] == null || $_POST['username'] == null || $_POST['dob'] == null || $_POST['email'] == null || $_POST['pasword'] == null) {
+                                echo "<br /><span style= \"color:#ff5e60; margin-left:10px; margin-top: 15px;\">One or more fields may be empty.</span><br /><br />";
+                            }
                         }
 
                         session_destroy();
