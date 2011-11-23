@@ -165,7 +165,7 @@
             $firstname = $_GET['firstname'];
             $lastname = $_GET['lastname'];
             $dob = $_GET['dob'];
-            $accountname = $_GET['username'];
+            $accountname = strtolower($_GET['username']);
             $email = $_GET['email'];
 
             $salt = bin2hex(mcrypt_create_iv(16, MCRYPT_DEV_URANDOM)); //get 256 random bits in hex
