@@ -5,7 +5,7 @@ All passwords are __hashed__ & __salted__  before being stored in the table.
 
 Licence:
 
-Copyright (C) <year> by <copyright holders>
+Copyright (C) 2011 by Jason Lennstrom
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
