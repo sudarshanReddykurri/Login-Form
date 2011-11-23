@@ -192,6 +192,12 @@
 		</div> 
 	
 	</div> 
-				
+
+<ul id="footer" style="padding-bottom: 7px;">
+	<li>
+		Page development by <a href="http://mnmlly.com" style="text-decoration: none; color:#58d1ef;!important !important">Jason Lennstrom</a>.
+	</li>
+		</ul>
+						
 </body>
 </html>
