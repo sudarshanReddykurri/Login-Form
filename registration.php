@@ -59,6 +59,8 @@
                             </fieldset>
                         </form>
                         <?php
+                        session_start();
+                        
                         $db = new mysqli("localhost", "root", "root", "login");
 
                         $password = $_POST['password'];
@@ -67,6 +69,7 @@
                         $dob = $_POST['dob'];
                         $accountname = strtolower($_POST['username']);
                         $email = $_POST['email'];
+                        $_SESSION['email'] = $email;
 
                         $salt = bin2hex(mcrypt_create_iv(16, MCRYPT_DEV_URANDOM)); //get 256 random bits in hex
                         $hash = hash("sha256", $salt . $password); //prepend the salt, then hash
@@ -88,9 +91,14 @@
 	            			$results = $db->query("SELECT * FROM users where accountname = '$accountname' or email = '$email'");
 	            			if ($results->num_rows == 0) {
                             	$db->query($query);
+                            	$email = $_POST['email'];
+                            	$message = "Thanks for making an account!";                            	
+                            	// Send
+                            	mail($email, 'Account Created', $message);
+
+                            	echo "<script> window.location = \"index.php\"; </script>";
                             	exit();
                             	session_destroy();
-                            	echo "<script> window.location = \"index.php\"; </script>";
                             	}
                             	else {
                             	echo "<br /><span style= \"color:#ff5e60; margin-left:10px; margin-top: 15px;\">Username or Email already exists.</span><br /><br />";
