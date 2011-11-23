@@ -30,7 +30,7 @@
         <div id="outer-container" style="background: url(images/bg1.gif) top center no-repeat;"> 
             <div id="container"> 
                 <div id="inner-container"> 
-                    <h3 style="margin-left: 8px;">Login Page</h3>
+                    <h1 style="margin-left: 8px;">Login Page</h1>
                     <div id="content-blocks-wrapper">
                         <form action="index.php" method="POST" name="ticket">
                             <fieldset>

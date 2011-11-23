@@ -33,7 +33,7 @@
         <div id="outer-container" style="background: url(images/bg1.gif) top center no-repeat;"> 
             <div id="container"> 
                 <div id="inner-container"> 
-                    <h3 style="margin-left: 8px;">Registration</h3>							
+                    <h1 style="margin-left: 8px;">Registration</h1>							
                     <div id="content-blocks-wrapper">
                         <form action="registration.php" method="POST" name="reg">
                             <fieldset>
@@ -94,7 +94,7 @@
                             	$email = $_POST['email'];
                             	$message = "Thanks for making an account!";                            	
                             	// Send
-                            	mail($email, 'Account Created', $message);
+                            	mail('$email', 'Account Created', $message);
 
                             	echo "<script> window.location = \"index.php\"; </script>";
                             	exit();
