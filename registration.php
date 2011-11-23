@@ -43,7 +43,7 @@
                                 <input name="lastname" type="text"/>
                                 <div class="clear"></div>
                                 <label for="username" style="margin-left: 10px;">USERNAME:</label>
-                                <input name="username" type="text" />
+                                <input name="username" type="text" value="" />
                                 <label for="dob" style="margin-top: -26px; margin-left: 255px;">DATE OF BIRTH:</label>
                                 <input name="dob" type="text" value="dd/mm/yyyy" />
                                 <div class="clear"></div>
@@ -85,20 +85,22 @@
 	            		VALUES ('$firstname', '$lastname', '$accountname', '$dob', '$email', '$final', '$salt')";
 	            		
 	            		if ($_POST['firstname'] && $_POST['lastname'] && $_POST['email'] && $_POST['password'] && $_POST['username'] && $_POST['dob']) {
-	            			$results = $db->query("SELECT * FROM users where accountname = '$accountname'");
+	            			$results = $db->query("SELECT * FROM users where accountname = '$accountname' or email = '$email'");
 	            			if ($results->num_rows == 0) {
                             	$db->query($query);
+                            	exit();
+                            	session_destroy();
                             	echo "<script> window.location = \"index.php\"; </script>";
                             	}
                             	else {
-                            	echo "<br /><span style= \"color:#ff5e60; margin-left:10px; margin-top: 15px;\">Username already exists.</span><br /><br />";
+                            	echo "<br /><span style= \"color:#ff5e60; margin-left:10px; margin-top: 15px;\">Username or Email already exists.</span><br /><br />";
                             	}
                             	
                         } else if (isset($_POST['submitted'])) {
                             echo "<br /><span style= \"color:#ff5e60; margin-left:10px; margin-top: 15px;\">Attention: one or more fields may be empty.</span><br /><br />";
                         }
                         
-                        session_destroy();
+                        
                         
                         ?>
                     </div>
