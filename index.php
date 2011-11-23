@@ -26,17 +26,11 @@
 </head>
 
 <body style="background: url(images/bkg_body.gif)  repeat-x white;">
-
 	<div id="outer-container" style="background: url(images/bg1.gif) top center no-repeat;"> 
-	
 		<div id="container"> 
-	
 			<div id="inner-container"> 
-
-									<h3 style="margin-left: 8px;">Login Page</h3>
-
+				<h3 style="margin-left: 8px;">Login Page</h3>
 				<div id="content-blocks-wrapper">
-
             		<form action="index.php" method="POST" name="ticket">
 						<fieldset>
 						<label for="accountname" style="margin-left: 10px;">USERNAME:</label>
@@ -44,13 +38,12 @@
 						<label for="password" style="margin-top: -26px; margin-left: 255px;">PASSWORD:</label>
 						<input name="password" type="password"/>
 						<div class="clear"></div>
-							<span id="submit-button-border" style="margin-left: 10px;"><input type="submit" name="submit" value="Login" id="submit-button"  /></span>
-							<div class="clear"></div>
-							<br />
-																			</fieldset>
+						<span id="submit-button-border" style="margin-left: 10px;"><input type="submit" name="submit" value="Login" id="submit-button"  /></span>
+						<div class="clear"></div>
+						<br />
+						</fieldset>
 					</form>
-					
-					 <?php
+					<?php
 					
 					            function myAutoLoader($class) {
 					                include $class . '.php';
@@ -83,25 +76,17 @@
 					                    echo "<span style= \"color:#ff5e60; margin-left:10px;\">Username or password is incorrect.</span><br /><br />";
 					                }
 					            }
-					            ?>
-					
+					?>
 					<span class="register" style="margin-left: 10px;">For those without an account please register for one<a href="registration.php"> here</a>.</span>
-					
 				</div><!-- end #content-blocks-wrapper -->
-			
-				<div class="clear"></div>
-								
+				<div class="clear"></div>				
 			</div> 
-	
 		</div> 
-	
 	</div> 
-
 <ul id="footer" style="padding-bottom: 7px;">
 	<li>
 		Page development by <a href="http://mnmlly.com" style="text-decoration: none; color:#58d1ef;!important !important">Jason Lennstrom</a>.
 	</li>
-		</ul>
-						
+</ul>						
 </body>
 </html>
