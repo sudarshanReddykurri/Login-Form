@@ -1,11 +1,10 @@
 <!DOCTYPE html> 
 <html lang="en"> 
-
 	<title>Login Page</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
 	<meta name="description" content="Simple Login Form"  /> 
-	<link rel="stylesheet" type="text/css" href="http://demo5.launcheffectapp.com/wp-content/themes/launcheffect/reset.css" />
-	<link rel="stylesheet" type="text/css" href="http://demo5.launcheffectapp.com/wp-content/themes/launcheffect/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
 	<style type="text/css">
 	h3 {
 		font-family:Helvetica Neue, Arial, sans-serif;

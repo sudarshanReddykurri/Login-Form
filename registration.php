@@ -1,9 +1,9 @@
 <!DOCTYPE html> 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"> 
+<html lang="en"> 
 	<title>Registration</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
-	<link rel="stylesheet" type="text/css" href="http://demo5.launcheffectapp.com/wp-content/themes/launcheffect/reset.css" />
-	<link rel="stylesheet" type="text/css" href="http://demo5.launcheffectapp.com/wp-content/themes/launcheffect/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
 	<style type="text/css">
 	h3 {
 		font-family:Helvetica Neue, Arial, sans-serif;
@@ -120,7 +120,7 @@
 	
 			<div id="inner-container"> 
 				
-									<h3>Registration Page</h3>							
+									<h3>Registration Page HELLO</h3>							
 				
 				<div id="content-blocks-wrapper">
 
@@ -148,7 +148,7 @@
 	<br />
 	<label for="password">PASSWORD :</label>
 	<input name="password" type="password" id="email" />
-	<span id="submit-button-border"><input type="submit" name="submit" value="Go" id="submit-button" /></span>
+	<span id="submit-button-border"><input type="submit" name="submit" value="Create" id="submit-button" /></span>
 	<div class="clear"></div>
 	<br />
 								<span class="privacy-policy"></span>
