@@ -177,48 +177,11 @@ input#successcode, input#returningcode {
 	width:288px;
 }
 
-span.privacy-policy {
+span.register {
 	font-size:0.6em;
 	display:block;
 	width:320px;
 	margin:5px 0 0 0;
-}
-
-/* USER */
-
-#button-aligin {
-	margin-left: 5000px ;
-}
-
-/* SOCIAL */
-
-.social-container {
-	width:302px;
-	padding:5px 0 13px 18px;
-	margin:10px 0 30px 0;
-	position:relative;
-	background:url('im/social-bg.png') repeat;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-}
-
-#fblikeblock, #fblikeblock-return, 
-#tweetblock, #tweetblock-return, 
-#plusoneblock, #plusoneblock-return, 
-#tumblrblock, #tumblrblock-return,
-#linkinblock, #linkinblock-return {
-	float:left !important;
-	margin:10px 18px 0 0 !important;
-	height:23px !important;
-}
-
-#fblikeblock, #fblikeblock-return {
-	width:108px !important;
-}
-
-#inner-container .disable {
-	display:none !important;
 }
 
 /* CREDIT */
