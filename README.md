@@ -1,11 +1,10 @@
 ## Simple PHP/MySQL Login Form
 
 ### Description:
-A simple login form with functional user registration. The login and registration pages pull data from a MySQL database which stores the information provided upon account creation.
-All passwords are __hashed__ & __salted__  before being stored in the table.
+A simple login form with functional user registration and account creation. The login and registration pages both pull their data from a MySQL database which stores the information provided upon account creation. The MySQL database is protected against MySQL Injection attacks by the usage of the "mysql_real_escape_string", other than that all security falls to the user. There is multiple error checking on the username and password as well as all passwords are __hashed__ & __salted__  before being stored in the table.
 
 ### Usage:
-Simply put the files in your *AMP/APACHE Directory and then navigate to that directory in your browser. To create the database, run the script provided in the __MySQL__ folder. If that doesn't work login to your MySQL via the Terminal/Command Prompt and copy and paste the script into there. To create accounts simply use the __Registration__ page, and fill in the appropriate data. 
+Simply put the files in your *AMP/APACHE Directory and then navigate to that directory in your browser. To create the database, run the script provided in the __MySQL__ folder. If that doesn't work login to your MySQL via the Terminal/Command Prompt, and copy and paste the script into there. To create accounts simply use the __Registration__ page, and fill in the appropriate data. 
 
 ### Licence:
 
