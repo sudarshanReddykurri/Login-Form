@@ -159,7 +159,7 @@
 
             <?php
             
-            $db = new mysqli("localhost", "root", "root", "security_ITAS218");
+            $db = new mysqli("localhost", "root", "root", "login");
 
             $password = $_GET['password'];
             $firstname = $_GET['firstname'];
@@ -181,7 +181,7 @@
 
             $db->query("USE users;");
 
-            $query = "INSERT INTO `security_ITAS218`.`users` (`firstname`, `lastname`, `accountname`, `birthdate`, `email`, `password`, `salt`) 
+            $query = "INSERT INTO `login`.`users` (`firstname`, `lastname`, `accountname`, `birthdate`, `email`, `password`, `salt`) 
             VALUES ('$firstname', '$lastname', '$accountname', '$dob', '$email', '$final', '$salt')";
 
             if ($_GET['firstname'] && $_GET['lastname'] && $_GET['email'] && $_GET['password']) {

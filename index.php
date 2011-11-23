@@ -147,7 +147,7 @@
 					
 					            spl_autoload_register('myAutoLoader');
 					
-					            $db = new mysqli("localhost", "root", "root", "security_ITAS218");
+					            $db = new mysqli("localhost", "root", "root", "login");
 					            if ($db->errno) {
 					                console . log("Unable to connect to the database");
 					                exit();
