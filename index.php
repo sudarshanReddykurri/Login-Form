@@ -41,11 +41,11 @@
 				
 	}
 
-	p, span.privacy-policy {
+	p, span.register {
 		color:#333;
 	}
 	
-	p a, ul#inner-footer li a, span.privacy-policy a {
+	p a, ul#inner-footer li a, span.register a {
 		color:#f60 !important;
 	}
 	
@@ -122,7 +122,7 @@
 	
 			<div id="inner-container"> 
 
-									<h3>Login Page</h3>
+									<h3 style="margin-left: 8px;">Login Page</h3>
 
 				<div id="content-blocks-wrapper">
 
@@ -136,8 +136,7 @@
 							<span id="submit-button-border" style="margin-left: 10px;"><input type="submit" name="submit" value="Login" id="submit-button"  /></span>
 							<div class="clear"></div>
 							<br />
-													<span class="privacy-policy" style="margin-left: 10px;">For those without an account please register for one<a href="registration.php"> here</a>.</span>
-						</fieldset>
+																			</fieldset>
 					</form>
 					
 					 <?php
@@ -170,11 +169,12 @@
 					                    echo "<script> window.location = \"http://google.ca\"; </script>";
 					                    exit;
 					                } else {
-					                    echo "<br/><br/><span style= \"color:#fe5d5f;\">Username or password is incorrect.</span>";
+					                    echo "<span style= \"color:#fe5d5f; margin-left:10px;\">Username or password is incorrect.</span><br /><br />";
 					                }
 					            }
 					            ?>
 					
+					<span class="register" style="margin-left: 10px;">For those without an account please register for one<a href="registration.php"> here</a>.</span>
 					
 				</div><!-- end #content-blocks-wrapper -->
 			
