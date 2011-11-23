@@ -11,7 +11,9 @@
 		padding-bottom: 25px;
 		font-weight:normal;
 		font-style:normal;
-		color:#333;
+		color: #B5B5B5;
+text-shadow: 0px 1px 1px #fff;!important
+
 		text-shadow: none;
 	}
 	
@@ -20,8 +22,8 @@
 		font-size:1em;
 		font-weight:normal;
 		font-style:normal;
-		color:#333;
-		text-shadow: none;
+		color:#333;text-shadow: 0px 1px 1px white;
+		color: #B5B5B5;		text-shadow: none;
 	}
 	
 	
@@ -30,7 +32,8 @@
 		font-size:.7em;
 		font-weight:normal;
 		font-style:normal;
-		color:#333;
+text-shadow: 0px 1px 1px white;
+color: #B5B5B5;
 		text-shadow: none;
 	}
 	
@@ -49,24 +52,25 @@
 	}
 	
 	input#submit-button {
-		background-color:#c4c4c4;
-		color: #fff;
+		background-color:#fff;
+		color: #333;
+		font-family:Helvetica Neue, Arial, sans-serif;
 	}
 	
 	span#submit-button-border {
-		border-color:#c4c4c4;
+		border-color:#aaa;
 	}
 	
 	input#submit-button:hover {
-		background-color:#f7f7f7;
-		color: #333;
+		background-color:#333;
+		color: #fff;
 	}
 	
 	#inner-container {
-		width:500px;
+		width:502px;
 		margin-top: -100px;		
 		margin: 0 auto;		
-		background-color: #e9e9e9;
+		background-color: #f4f4f4;
 		-webkit-border-radius: 5px; /* Saf3-4, iOS 1-3.2, Android <e;1.6 */
 		   -moz-border-radius: 5px; /* FF1-3.6 */
 		        border-radius: 5px; /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
@@ -112,7 +116,7 @@
 	<![endif]--> 
 </head>
 
-<body style="background: #d4d4d4;">
+<body style="background: #ff9c5e;">
 
 	<div id="outer-container"> 
 	
@@ -145,9 +149,10 @@
 	<br />
 	<div class="clear"></div>
 	<br />
-	<span id="submit-button-border"><input type="submit" name="submit" value="Create" id="submit-button" /></span>								
+	<span id="submit-button-border"><input type="submit" name="submit" value="Create" id="submit-button" /></span><span id="submit-button-border"><input type="button" name="back" value="Cancel" id="submit-button" /></span>								
 	</fieldset>
  </form>
+ 
 
             <?php
             
@@ -157,7 +162,7 @@
             $firstname = $_GET['firstname'];
             $lastname = $_GET['lastname'];
             $dob = $_GET['dob'];
-            $accountname = strtolower($firstname . $lastname);
+            $accountname = $_GET['username'];
             $email = $_GET['email'];
 
             $salt = bin2hex(mcrypt_create_iv(16, MCRYPT_DEV_URANDOM)); //get 256 random bits in hex

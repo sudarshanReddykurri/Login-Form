@@ -136,7 +136,7 @@ input {
 	font-size:0.8em;
 	line-height:0.9em;
 	float:left;
-	margin: 0 10px 15px 0;
+	margin: 0px 0px 15px 10px;
 }
 
 input:focus {
@@ -155,6 +155,7 @@ span#submit-button-border {
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 	background:#333;
+	margin-right: 15px;
 }
 
 input#submit-button {
@@ -162,7 +163,7 @@ input#submit-button {
 	background:transparent;
 	border:none;
 	width:100px;
-	height:43px;
+	height:33px;
 	font-size:0.8em;
 	margin:0;
 	color:#fff;

@@ -12,7 +12,9 @@
 		padding-bottom: 25px;
 		font-weight:normal;
 		font-style:normal;
-		color:#333;
+		color: #B5B5B5;
+text-shadow: 0px 1px 1px #fff;!important
+
 		text-shadow: none;
 	}
 	
@@ -21,17 +23,18 @@
 		font-size:1em;
 		font-weight:normal;
 		font-style:normal;
-		color:#333;
-		text-shadow: none;
+		color:#333;text-shadow: 0px 1px 1px white;
+		color: #B5B5B5;		text-shadow: none;
 	}
 	
 	
 	h2.social-heading, label {
 		font-family:Helvetica Neue, Arial, sans-serif;
-		font-size:1em;
+		font-size:.7em;
 		font-weight:normal;
 		font-style:normal;
-		color:#333;
+text-shadow: 0px 1px 1px white;
+color: #B5B5B5;
 		text-shadow: none;
 	}
 	
@@ -50,24 +53,25 @@
 	}
 	
 	input#submit-button {
+		background-color:#fff;
+		color: #333;
+		font-family:Helvetica Neue, Arial, sans-serif;
+	}
+	
+	span#submit-button-border {
+		border-color:#aaa;
+	}
+	
+	input#submit-button:hover {
 		background-color:#c4c4c4;
 		color: #fff;
 	}
 	
-	span#submit-button-border {
-		border-color:#c4c4c4;
-	}
-	
-	input#submit-button:hover {
-		background-color:#f7f7f7;
-		color: #333;
-	}
-	
 	#inner-container {
-		width:310px;		
+		width:500px;
+		margin-top: -100px;		
 		margin: 0 auto;		
-		margin-top: -100px;
-		background-color: #e9e9e9;
+		background-color: #f4f4f4;
 		-webkit-border-radius: 5px; /* Saf3-4, iOS 1-3.2, Android <e;1.6 */
 		   -moz-border-radius: 5px; /* FF1-3.6 */
 		        border-radius: 5px; /* Opera 10.5, IE9, Saf5, Chrome, FF4, iOS 4, Android 2.1+ */
@@ -116,7 +120,7 @@
 
 </head>
 
-<body style="background: #d4d4d4;">
+<body style="background: #58d1ef;">
 
 	<div id="outer-container"> 
 	
