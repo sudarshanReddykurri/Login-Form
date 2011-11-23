@@ -82,18 +82,24 @@
                         $db->query("USE users;");
 
                         $query = "INSERT INTO `login`.`users` (`firstname`, `lastname`, `accountname`, `birthdate`, `email`, `password`, `salt`) 
-            		VALUES ('$firstname', '$lastname', '$accountname', '$dob', '$email', '$final', '$salt')";
-
-                        if ($_POST['firstname'] && $_POST['lastname'] && $_POST['email'] && $_POST['password'] && $_POST['username'] && $_POST['dob']) {
-                            $db->query($query);
-                            echo "<script> window.location = \"index.php\"; </script>";
+	            		VALUES ('$firstname', '$lastname', '$accountname', '$dob', '$email', '$final', '$salt')";
+	            		
+	            		if ($_POST['firstname'] && $_POST['lastname'] && $_POST['email'] && $_POST['password'] && $_POST['username'] && $_POST['dob']) {
+	            			$results = $db->query("SELECT * FROM users where accountname = '$accountname'");
+	            			if ($results->num_rows == 0) {
+                            	$db->query($query);
+                            	echo "<script> window.location = \"index.php\"; </script>";
+                            	}
+                            	else {
+                            	echo "<br /><span style= \"color:#ff5e60; margin-left:10px; margin-top: 15px;\">Username already exists.</span><br /><br />";
+                            	}
+                            	
                         } else if (isset($_POST['submitted'])) {
-                            if ($_POST['firstname'] == null || $_POST['lastname'] == null || $_POST['username'] == null || $_POST['dob'] == null || $_POST['email'] == null || $_POST['pasword'] == null) {
-                                echo "<br /><span style= \"color:#ff5e60; margin-left:10px; margin-top: 15px;\">One or more fields may be empty.</span><br /><br />";
-                            }
+                            echo "<br /><span style= \"color:#ff5e60; margin-left:10px; margin-top: 15px;\">Attention: one or more fields may be empty.</span><br /><br />";
                         }
-
+                        
                         session_destroy();
+                        
                         ?>
                     </div>
                 </div>
