@@ -5,11 +5,11 @@
 
         <title>Login Page</title>
         <meta name="description" content="Simple Login Form">
-        <link rel="stylesheet" type="text/css" href="css/reset.css">
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
 
         <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js?ver=3.2.1'></script>
         <script type='text/javascript' src='http://demo5.launcheffectapp.com/wp-content/themes/launcheffect/js/init.js?ver=1.0'></script>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/styles.css">
         <!--[if lt IE 8]>
         <style type="text/css">
                 #outer-container{display:block}
