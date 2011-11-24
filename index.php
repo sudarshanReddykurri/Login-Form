@@ -56,8 +56,7 @@
 
                         $db = new mysqli("localhost", "root", "root", "login");
                         if ($db->errno) {
-                            console . log("Unable to connect to the database");
-                            exit();
+                            die("Unable to connect to the database");
                         }
 
                         $db->query("USE users");
