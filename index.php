@@ -9,8 +9,6 @@
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/styles.css">
 
-        <script defer src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js?ver=3.2.1'></script>
-        <script defer src='http://demo5.launcheffectapp.com/wp-content/themes/launcheffect/js/init.js?ver=1.0'></script>
         <!--[if lt IE 8]>
         <style type="text/css">
                 #outer-container{display:block}
@@ -59,11 +57,9 @@
                             die("Unable to connect to the database");
                         }
 
-                        $db->query("USE users");
-
                         if (isset($_POST['accountname']) && isset($_POST['password'])) {
-                            $username = mysql_real_escape_string($_POST['accountname']);
-                            $pswd = mysql_real_escape_string($_POST['password']);
+                            $username = mysqli_real_escape_string($_POST['accountname']);
+                            $pswd = mysqli_real_escape_string($_POST['password']);
                             $query = "select * FROM users WHERE accountname = '$username'";
                             $result = $db->query($query);
                             $row = $result->fetch_object();
@@ -90,5 +86,8 @@
                 Page development by <a href="http://mnmlly.com">Jason Lennstrom</a>.
             </li>
         </ul>
+
+        <script defer src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js?ver=3.2.1'></script>
+        <script defer src='http://demo5.launcheffectapp.com/wp-content/themes/launcheffect/js/init.js?ver=1.0'></script>
     </body>
 </html>
