@@ -59,8 +59,6 @@
                             die("Unable to connect to the database");
                         }
 
-                        $db->query("USE users");
-
                         if (isset($_POST['accountname']) && isset($_POST['password'])) {
                             $username = mysqli_real_escape_string($_POST['accountname']);
                             $pswd = mysqli_real_escape_string($_POST['password']);
