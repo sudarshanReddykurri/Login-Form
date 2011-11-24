@@ -62,8 +62,8 @@
                         $db->query("USE users");
 
                         if (isset($_POST['accountname']) && isset($_POST['password'])) {
-                            $username = mysql_real_escape_string($_POST['accountname']);
-                            $pswd = mysql_real_escape_string($_POST['password']);
+                            $username = mysqli_real_escape_string($_POST['accountname']);
+                            $pswd = mysqli_real_escape_string($_POST['password']);
                             $query = "select * FROM users WHERE accountname = '$username'";
                             $result = $db->query($query);
                             $row = $result->fetch_object();
