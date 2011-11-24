@@ -317,4 +317,20 @@ ul#footer li a.logo {
 		-webkit-appearance: none !important;
 	}
 
+body { background: url(images/bkg_body.gif) repeat-x white }
 
+#outer-container { background: url(images/bg1.gif) top center no-repeat }
+
+#inner-container > h1 { margin-left: 8px }
+
+label[for="accountname"] { margin-left: 10px }
+
+label[for="password"] { margin-top: -26px margin-left: 255px }
+
+#submit-button-border { margin-left: 10px }
+
+.register { margin-left: 10px }
+
+#footer { padding-bottom: 7px }
+
+#footer a { text-decoration: none; color: #58d1ef; }
