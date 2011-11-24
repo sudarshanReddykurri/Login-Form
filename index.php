@@ -28,20 +28,20 @@
         <![endif]--> 
     </head>
 
-    <body style="background: url(images/bkg_body.gif)  repeat-x white;">
-        <div id="outer-container" style="background: url(images/bg1.gif) top center no-repeat;">
+    <body>
+        <div id="outer-container">
             <div id="container">
                 <div id="inner-container">
-                    <h1 style="margin-left: 8px;">Login Page</h1>
+                    <h1>Login Page</h1>
                     <div id="content-blocks-wrapper">
                         <form action="index.php" method="POST" name="ticket">
                             <fieldset>
-                                <label for="accountname" style="margin-left: 10px;">USERNAME:</label>
+                                <label for="accountname">USERNAME:</label>
                                 <input name="accountname" type="text">
-                                <label for="password" style="margin-top: -26px; margin-left: 255px;">PASSWORD:</label>
+                                <label for="password">PASSWORD:</label>
                                 <input name="password" type="password">
                                 <div class="clear"></div>
-                                <span id="submit-button-border" style="margin-left: 10px;"><input type="submit" name="submit" value="Login" id="submit-button"  ></span>
+                                <span id="submit-button-border"><input type="submit" name="submit" value="Login" id="submit-button"  ></span>
                                 <div class="clear"></div>
                                 <br>
                             </fieldset>
@@ -80,15 +80,15 @@
                             }
                         }
                         ?>
-                        <span class="register" style="margin-left: 10px;">Register for an account <a href="registration.php">here</a>.</span>
+                        <span class="register">Register for an account <a href="registration.php">here</a>.</span>
                     </div><!-- end #content-blocks-wrapper -->
                     <div class="clear"></div>
                 </div>
             </div>
         </div>
-        <ul id="footer" style="padding-bottom: 7px;">
+        <ul id="footer">
             <li>
-                Page development by <a href="http://mnmlly.com" style="text-decoration: none; color:#58d1ef;!important">Jason Lennstrom</a>.
+                Page development by <a href="http://mnmlly.com">Jason Lennstrom</a>.
             </li>
         </ul>
     </body>
